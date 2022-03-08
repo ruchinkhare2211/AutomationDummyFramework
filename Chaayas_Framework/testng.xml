@@ -1,0 +1,27 @@
+<suite name="Suite">
+    <test name="VerifyPetIcon">
+        <classes>
+            <class name="com.testscripts.VerifyPetIcon"/>
+        </classes>
+    </test>
+<!--    <test name="AddOwnerAndPet">-->
+<!--        <classes>-->
+<!--            <class name="com.testscripts.AddOwnerAndPet"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="VerifyOwnerAndPetDetails">-->
+<!--        <classes>-->
+<!--            <class name="com.testscripts.VerifyOwnerAndPetDetails"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="GetVeterinariansDetails">-->
+<!--        <classes>-->
+<!--            <class name="com.testscripts.GetVeterinariansDetails"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="GetOwnerNameDetails">-->
+<!--        <classes>-->
+<!--            <class name="com.testscripts.GetOwnerNameDetails"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

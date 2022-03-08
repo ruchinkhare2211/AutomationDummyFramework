@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">VerifyPetIcon</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">0</td><td class="numi">7.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr id="t1"><th colspan="5">VerifyPetIcon &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td>com.testscripts.VerifyPetIcon</td><td><a href="#m1"><b>startBroser</b>  </a></td><td class="numi">1</td><td>1646735170768</td><td class="numi">7345</td></tr>
+<tr><th colspan="5">VerifyPetIcon &#8212; skipped</th></tr>
+<tr class="skippedodd"><td>com.testscripts.VerifyPetIcon</td><td><a href="#m2"><b>verifyPetImageIconIsDisplayed</b>  </a></td><td class="numi">1</td><td>1646735178196</td><td class="numi">0</td></tr>
+</table>
+<h1>VerifyPetIcon</h1>
+<h2 id="m1">com.testscripts.VerifyPetIcon:startBroser</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.102 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6FP78D8&apos;, ip: &apos;192.168.171.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009E6903+2517251]
+	Ordinal0 [0x0097F8E1+2095329]
+	Ordinal0 [0x00882848+1058888]
+	Ordinal0 [0x008A0B9D+1182621]
+	Ordinal0 [0x0089CA60+1165920]
+	Ordinal0 [0x0089A2CF+1155791]
+	Ordinal0 [0x008CAAAF+1354415]
+	Ordinal0 [0x008CA71A+1353498]
+	Ordinal0 [0x008C639B+1336219]
+	Ordinal0 [0x008A27A7+1189799]
+	Ordinal0 [0x008A3609+1193481]
+	GetHandleVerifier [0x00B75904+1577972]
+	GetHandleVerifier [0x00C20B97+2279047]
+	GetHandleVerifier [0x00A76D09+534521]
+	GetHandleVerifier [0x00A75DB9+530601]
+	Ordinal0 [0x00984FF9+2117625]
+	Ordinal0 [0x009898A8+2136232]
+	Ordinal0 [0x009899E2+2136546]
+	Ordinal0 [0x00993541+2176321]
+	BaseThreadInitThunk [0x752E6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77258944+228]
+	RtlGetAppContainerNamedObjectPath [0x77258914+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.basepage.BasePage.startBroser(BasePage.java:23)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 25 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.testscripts.VerifyPetIcon:verifyPetImageIconIsDisplayed</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 96
+Current browser version is 98.0.4758.102 with binary path C:\Program Files (x86)\Google\Chrome\Application\chrome.exe
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6FP78D8&apos;, ip: &apos;192.168.171.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x009E6903+2517251]
+	Ordinal0 [0x0097F8E1+2095329]
+	Ordinal0 [0x00882848+1058888]
+	Ordinal0 [0x008A0B9D+1182621]
+	Ordinal0 [0x0089CA60+1165920]
+	Ordinal0 [0x0089A2CF+1155791]
+	Ordinal0 [0x008CAAAF+1354415]
+	Ordinal0 [0x008CA71A+1353498]
+	Ordinal0 [0x008C639B+1336219]
+	Ordinal0 [0x008A27A7+1189799]
+	Ordinal0 [0x008A3609+1193481]
+	GetHandleVerifier [0x00B75904+1577972]
+	GetHandleVerifier [0x00C20B97+2279047]
+	GetHandleVerifier [0x00A76D09+534521]
+	GetHandleVerifier [0x00A75DB9+530601]
+	Ordinal0 [0x00984FF9+2117625]
+	Ordinal0 [0x009898A8+2136232]
+	Ordinal0 [0x009899E2+2136546]
+	Ordinal0 [0x00993541+2176321]
+	BaseThreadInitThunk [0x752E6359+25]
+	RtlGetAppContainerNamedObjectPath [0x77258944+228]
+	RtlGetAppContainerNamedObjectPath [0x77258914+180]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.basepage.BasePage.startBroser(BasePage.java:23)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 25 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
